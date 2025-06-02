@@ -1,0 +1,114 @@
+/* Reset básico */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #A3A656;
+    padding: 0 40px; /* espacio interno para separarlo de los bordes */
+    box-sizing: content-box;
+}
+
+/* Lado izquierdo del header */
+.header .izquierda {
+    display: flex;
+    align-items: center;
+}
+
+.header .menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header .menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/* Lado derecho del header */
+.header .derecha {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Elementos dentro de cuenta e idioma */
+.derecha .cuenta,
+.derecha .idioma {
+    display: flex;
+    align-items: center;
+}
+
+.derecha img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.main-content {
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+.main-content > .imagen-principal {
+    background-image: url(../assets/main.png);
+    background-size: cover; /* o contain según lo que prefieras */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: calc(100vh - 70px); /* el 100vh menos el header */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 180px;
+    padding-top: 140px;
+}
+
+.main-content > .separador {
+    box-sizing: border-box;
+    height: 100px;
+    background-color: #F2F6F6;
+    width: 100%;
+
+}
+
+.main-content > .imagen-principal > .mensaje-bienvenida{
+    border: 1px solid red;
+    width: fit-content;
+    
+
+}
+
+
+.servicios{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.servicio{
+    border-radius: 15px 15px 0 0;
+    width: 250px;
+    border: 1px solid red;
+}
+
+.servicio > .informacion{
+    display: flex;
+    justify-content: space-between;
+}
