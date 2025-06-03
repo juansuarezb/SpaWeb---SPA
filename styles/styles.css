@@ -1,3 +1,8 @@
+*{
+    border: 1px solid red;
+}
+
+
 /* Reset básico */
 html, body {
     margin: 0;
@@ -5,6 +10,7 @@ html, body {
     width: 100%;
     height: 100%;
     font-family: 'Inter', sans-serif;
+    
 }
 
 /* HEADER */
@@ -89,7 +95,6 @@ html, body {
 }
 
 .main-content > .imagen-principal > .mensaje-bienvenida{
-    border: 1px solid red;
     width: fit-content;
     
 
@@ -105,7 +110,7 @@ html, body {
 .servicio{
     border-radius: 15px 15px 0 0;
     width: 250px;
-    border: 1px solid red;
+
 }
 
 .servicio > .informacion{
