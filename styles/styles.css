@@ -1,7 +1,8 @@
-*{
-    border: 1px solid red;
-}
 
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 /* Reset básico */
 html, body {
@@ -61,9 +62,10 @@ html, body {
 }
 
 .derecha img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
+    margin: 0px 5px;
 }
 
 .main-content {
@@ -91,48 +93,172 @@ html, body {
     height: 100px;
     background-color: #F2F6F6;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.main-content > .imagen-principal > .mensaje-bienvenida{
+.main-content > .imagen-principal > .mensaje-bienvenida > h1 {
     width: fit-content;
-    
-
+    font-family: 'Romanesco', cursive;
+    font-weight: normal;
+    font-size: 6em;
 }
 
+.main-content >  .separador > .formulario{
+    width: fit-content;
+
+}
 
 .servicios{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
     margin-top: 100px;
 }
 
-.servicio{
-    border-radius: 15px 15px 0 0;
-    width: 250px;
-
-}
-
-.servicio > .informacion{
-    display: flex;
-    justify-content: space-between;
-}
 
 .main-content > .membresias{
     height: 770px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F6F6;
+
 }
+
+.main-content > .membresias > h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.5em;
+}
+
 
 .main-content > .membresias > .tarjetas{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.main-content > .membresias > .tarjetas > .membresia{
+    height: 500px;;
 }
 
 
-.footer {
+.main-content > .membresias > .tarjetas > .membresia > .membresia-descripcion > h1 {
+  display: block;
+  text-align: center;
+}
+
+
+
+
+.contenedor{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    border-radius: 15px 15px 0 0;
+    width: 280px;
+    margin-left: 134px;
+}
+
+
+.imagenTerapia img{
+    width: 100%;
+    height: 100%;
+}
+
+.descripcion h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+
+.membresia-imagen{
+    width: 233px;
+    height: 233px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    border: 10px solid #384001;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 248, 248);
+}
+
+.membresia-imagen img{
+    width: 140px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+
+}
+
+.contenedor .precioanterior{
+    color: #FF0000;
+    text-decoration: line-through;
+    margin: 10px 50px;
+}
+
+.add-button{
+    background-color: #ff1818;
+    border-radius: 4px;
+    margin: 15px 5px;
+    padding: 10px 0px;
+}
+
+
+.add-button a{
+    text-decoration: none;
+    color: #FFFF;
+}
+
+
+.boton {
+  background-color: #A3A656;
+  margin: 10px auto;
+  width: 220px;
+  height: 30px;
+  display: flex;
+  border-radius: 35px;
+}
+
+
+.boton a {
+  width: 100%;
+  height: 100%;
+  display: flex;               /* Añadido */
+  align-items: center;         /* Centra verticalmente */
+  justify-content: center;     /* Centra horizontalmente */
+  text-decoration: none;
+  color: white;
+}
+
+.footer-content{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 97px;
-    background-color: #A3A656;
-    padding: 0 40px; /* espacio interno para separarlo de los bordes */
-    box-sizing: content-box;
+}
+
+
+.formulario input {
+  padding: 8px;
+  margin-left: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.servicio-titulo{
+  background-color: #A3A656;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  border-radius: 15px 15px 0 0;
+  color: #F2F6F6;
+}
+
+.servicio-titulo > h1{
+font-family: 'Inter', sans-serif;
+font-weight: normal;
+font-size: 1.5em;
 }

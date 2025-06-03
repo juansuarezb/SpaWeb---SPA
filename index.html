@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Romanesco&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
@@ -29,7 +33,11 @@
         <div class="idioma">
           <p>ES</p>
           <img src="assets/flag.png" alt="idioma" />
-          <img src="assets/arrow.png" alt="flecha" />
+          <img
+            src="assets/arrow.png"
+            alt="flecha"
+            style="width: 20px; height: 10px"
+          />
         </div>
       </div>
     </header>
@@ -43,70 +51,70 @@
         </div>
       </div>
       <section class="separador">
-        <form action="#" method="POST">
-          <label for="reserva-cita"
+        <form action="#" method="POST" class="formulario">
+          <label class="menu" for="reserva-cita"
             >Reserva tu cita:
             <input id="reserva-cita" type="text" name="reserva-cita"
           /></label>
-          <label for="codigo-promocion"
+          <label class="menu" for="codigo-promocion"
             >Código de promoción:
             <input id="codigo-promocion" type="text" name="codigo-promocion"
           /></label>
         </form>
       </section>
       <section class="servicios">
-        <div class="servicio">
-          <div class="titulo-servicio">
-            <h2>Facial rejuvenecedor</h2>
+        <div class="contenedor">
+          <div class="servicio-titulo">
+            <h1>Masaje de pies</h1>
           </div>
-          <div class="imagen-servicio">
-            <img
-              src="assets/facial-rejuvenecedor.jpg"
-              alt="Facial rejuvenecedor"
-            />
+          <div class="imagenTerapia">
+            <img src="assets/pies.png" alt="masaje pies" />
           </div>
-          <p>Esta es una descripción de la opción en cuestión....</p>
-          <div class="informacion">
-            <div class="precio">
-              <p>Precio: $XXX</p>
-            </div>
-            <button>Reservar</button>
+          <div class="disponible">Disponible</div>
+          <!--Precios-->
+          <div>
+            <div class="precioanterior">45 $</div>
+            <div class="precioactual">30 $</div>
           </div>
-        </div>
-        <div class="servicio">
-          <div class="titulo-servicio">
-            <h2>Facial rejuvenecedor</h2>
-          </div>
-          <div class="imagen-servicio">
-            <img
-              src="assets/facial-rejuvenecedor.jpg"
-              alt="Facial rejuvenecedor"
-            />
-          </div>
-          <p>Esta es una descripción de la opción en cuestión....</p>
-          <div class="informacion">
-            <div class="precio">
-              <p>Precio: $XXX</p>
-            </div>
-            <button>Reservar</button>
+          <!--Boton-->
+          <div class="add-button">
+            <a href="http://www.google.com">Agregalo al carrito</a>
           </div>
         </div>
-        <div class="servicio">
-          <div class="titulo-servicio">
-            <h2>Facial rejuvenecedor</h2>
+        <div class="contenedor">
+          <div class="servicio-titulo">
+            <h1>Masaje de pies</h1>
           </div>
-          <div class="imagen-servicio">
-            <img
-              src="assets/facial-rejuvenecedor.jpg"
-              alt="Facial rejuvenecedor"
-            />
+          <div class="imagenTerapia">
+            <img src="assets/relajante.png" alt="" />
           </div>
-          <p>Esta es una descripción de la opción en cuestión....</p>
-          <div class="informacion">
-            <div class="precio">
-              <p>Precio: $XXX</p>
-            </div>
-            <button>Reservar</button>
+          <div class="disponible">Disponible</div>
+          <!--Precios-->
+          <div>
+            <div class="precioanterior">45 $</div>
+            <div class="precioactual">30 $</div>
+          </div>
+          <!--Boton-->
+          <div class="add-button">
+            <a href="http://www.google.com">Agregalo al carrito</a>
+          </div>
+        </div>
+        <div class="contenedor">
+          <div class="servicio-titulo">
+            <h1>Masaje de pies</h1>
+          </div>
+          <div class="imagenTerapia">
+            <img src="assets/bambu.png" alt="bambu" />
+          </div>
+          <div class="disponible">Disponible</div>
+          <!--Precios-->
+          <div>
+            <div class="precioanterior">45 $</div>
+            <div class="precioactual">30 $</div>
+          </div>
+          <!--Boton-->
+          <div class="add-button">
+            <a href="http://www.google.com">Agregalo al carrito</a>
           </div>
         </div>
       </section>
@@ -115,10 +123,13 @@
         <div class="tarjetas">
           <div class="membresia">
             <div class="membresia-imagen">
-              <img src="assets/membresia.jpg" alt="Membresía" />
+              <img src="assets/gold.png" alt="Membresía" />
             </div>
             <div class="membresia-descripcion">
-              <button>Unirme</button>
+              <h1>GOLD</h1>
+              <div class="boton">
+                <a href="http://">VER CONDICIONES</a>
+              </div>
               <ul>
                 <li>Gimnasio</li>
                 <li>Piscina</li>
@@ -128,10 +139,13 @@
           </div>
           <div class="membresia">
             <div class="membresia-imagen">
-              <img src="assets/membresia.jpg" alt="Membresía" />
+              <img src="assets/premium.png" alt="Membresía" />
             </div>
             <div class="membresia-descripcion">
-              <button>Unirme</button>
+              <h1>PREMIUM</h1>
+              <div class="boton">
+                <a href="http://">VER CONDICIONES</a>
+              </div>
               <ul>
                 <li>Gimnasio</li>
                 <li>Piscina</li>
@@ -141,10 +155,13 @@
           </div>
           <div class="membresia">
             <div class="membresia-imagen">
-              <img src="assets/membresia.jpg" alt="Membresía" />
+              <img src="assets/plate.png" alt="Membresía" />
             </div>
             <div class="membresia-descripcion">
-              <button>Unirme</button>
+              <h1>PLATE</h1>
+              <div class="boton">
+                <a href="http://">VER CONDICIONES</a>
+              </div>
               <ul>
                 <li>Gimnasio</li>
                 <li>Piscina</li>
@@ -168,7 +185,6 @@
           <p>Síguenos en nuestras redes sociales</p>
           <img src="assets/facebook.png" alt="Facebook" />
           <img src="assets/instagram.png" alt="Instagram" />
-          <img src="assets/twitter.png" alt="Twitter" />
         </div>
       </div>
     </footer>
