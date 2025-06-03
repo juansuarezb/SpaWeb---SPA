@@ -8,7 +8,7 @@ html, body {
 }
 
 /* HEADER */
-.header {
+.header, .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,4 +111,23 @@ html, body {
 .servicio > .informacion{
     display: flex;
     justify-content: space-between;
+}
+
+.main-content > .membresias{
+    height: 770px;
+}
+
+.main-content > .membresias > .tarjetas{
+    display: flex;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 97px;
+    background-color: #A3A656;
+    padding: 0 40px; /* espacio interno para separarlo de los bordes */
+    box-sizing: content-box;
 }
