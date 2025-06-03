@@ -201,7 +201,7 @@ html, body {
 }
 
 .add-button{
-    background-color: #ff1818;
+    background-color:#A3A656;
     border-radius: 4px;
     margin: 15px 5px;
     padding: 10px 0px;
@@ -234,9 +234,20 @@ html, body {
   color: white;
 }
 
+.footer{
+    box-sizing: border-box;
+    display: block;
+}
+
 .footer-content{
     display: flex;
     justify-content: space-between;
+}
+
+footer > .footer-content > .footer-links > ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 
@@ -261,4 +272,17 @@ html, body {
 font-family: 'Inter', sans-serif;
 font-weight: normal;
 font-size: 1.5em;
+}
+
+.pago{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pago > .add-button{
+    width: 80px;
+}
+
+.header > .izquierda > .menu > li > a:hover, footer > .footer-content > .footer-links > ul > li > a:hover {
+    color: #FFFF00
 }
