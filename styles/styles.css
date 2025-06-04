@@ -1,13 +1,11 @@
-
-
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 /* Reset básico */
 html, body {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     width: 100%;
     height: 100%;
     font-family: 'Inter', sans-serif;
@@ -15,12 +13,22 @@ html, body {
 }
 
 /* HEADER */
-.header, .footer {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
     background-color: #A3A656;
+    padding: 0 40px; /* espacio interno para separarlo de los bordes */
+    box-sizing: content-box;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #384001;
     padding: 0 40px; /* espacio interno para separarlo de los bordes */
     box-sizing: content-box;
 }
@@ -99,12 +107,25 @@ html, body {
 
 }
 
+
+.mensaje-bienvenida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+}
+
 .main-content > .imagen-principal > .mensaje-bienvenida > h1 {
     width: fit-content;
     font-family: 'Romanesco', cursive;
     font-weight: normal;
     font-size: 6em;
+    margin-top: 0;
 }
+
 
 .main-content >  .separador > .formulario{
     width: fit-content;
@@ -113,8 +134,10 @@ html, body {
 
 .servicios{
     display: flex;
-    flex-direction: row;
-    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 60px;
 }
 
 
@@ -151,15 +174,12 @@ html, body {
 }
 
 
-
-
 .contenedor{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     border-radius: 15px 15px 0 0;
-    width: 280px;
-    margin-left: 134px;
+    width: 400px;
 }
 
 
@@ -194,23 +214,24 @@ html, body {
 
 }
 
-.contenedor .precioanterior{
-    color: #FF0000;
-    text-decoration: line-through;
-    margin: 10px 50px;
-}
 
 .add-button{
     background-color:#A3A656;
     border-radius: 4px;
     margin: 15px 5px;
     padding: 10px 0px;
+    width: 30%;
+    height: 40px;
+    display: flex;
+    border-radius: 35px 35px 35px 35px;
+    justify-content: center;
 }
 
 
-.add-button a{
+.add-button a {
     text-decoration: none;
-    color: #FFFF;
+    color: rgb(255, 249, 249); /* o blanco si el fondo es oscuro */
+    font-weight: normal;
 }
 
 
@@ -266,23 +287,61 @@ footer > .footer-content > .footer-links > ul{
   height: 60px;
   border-radius: 15px 15px 0 0;
   color: #F2F6F6;
+
 }
 
-.servicio-titulo > h1{
-font-family: 'Inter', sans-serif;
-font-weight: normal;
-font-size: 1.5em;
+.servicio-titulo > h1, .mensaje-bienvenida > p{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 .pago{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.pago > .add-button{
-    width: 80px;
-}
 
+.pago > p{
+    font-size: 32px;
+    font-weight: bold;
+}
 .header > .izquierda > .menu > li > a:hover, footer > .footer-content > .footer-links > ul > li > a:hover {
     color: #FFFF00
+}
+
+.contenedor:hover, .membresia:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+}
+
+
+
+.footer-social {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    gap: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .servicios,
+  .tarjetas {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contenedor,
+  .membresia {
+    width: 90%;
+  }
+
+  .main-content > .imagen-principal {
+    padding-left: 20px;
+    padding-top: 80px;
+    text-align: center;
+  }
 }
